@@ -2,9 +2,11 @@
   "name": "dominator",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/AmirHKiani98/DOMinatorJS/issues"
   },
-  "homepage": "https://github.com/AmirHKiani98/DOMinatorJS#readme"
+  "homepage": "https://github.com/AmirHKiani98/DOMinatorJS#readme",
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "webpack": "^5.94.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.10",
+    "webpack-cli": "^5.1.4"
+  }
 }
