@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    /* styles.css or output.css */
+    .hole {
+        position: absolute;
+        box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.5); /* Large shadow to start */
+        transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+        pointer-events: none; /* Ensure clicks go through the hole */
+    }
+
+}
