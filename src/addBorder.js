@@ -4,6 +4,9 @@ function addBorder(target, offset=30) {
     // Function to handle button click
     $('[data-target-id-border-dominatorjs]').on("click", function (e) {
         e.stopPropagation(); // Prevent the click from bubbling up and triggering a blur on the body
+        if($(this).data("target-id-border-dominatorjs") === undefined || $(this).data("target-id-border-dominatorjs") === "") {
+            return;
+        }
         var targetItem = $("#" + $(this).data("target-id-border-dominatorjs"));
 
         // Remove border and focused class from any previously targeted item
